@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title>Portafolio — Clan Cervecero | 22+ Marcas de Cerveza Premium</title>
+  <meta name="description" content="Conocé nuestro portafolio completo: Sapporo, Guinness, Trooper, Blue Moon, Hobgoblin y más. 22+ marcas de 12 países disponibles en Guatemala.">
+
+  <link rel="canonical" href="https://clancervecero.com/portafolio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portafolio — Clan Cervecero">
+  <meta property="og:description" content="22+ marcas de cerveza premium de 12 países. Conocé nuestra selección completa.">
+  <meta property="og:url" content="https://clancervecero.com/portafolio.html">
+  <meta property="og:image" content="https://clancervecero.com/assets/img/brand/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/clan.css">
+</head>
+<body class="bg-clan-dark text-white">
+
+  <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+  <!-- ═══ AGE GATE ═══ -->
+  <div id="age-gate" class="age-gate">
+    <div class="text-center px-6 max-w-md">
+      <img src="assets/img/brand/logo.png" alt="Clan Cervecero" class="h-16 mx-auto mb-8 opacity-90">
+      <p class="text-white/70 text-lg mb-8 font-light">Para ingresar a este sitio debes ser mayor de edad</p>
+      <button id="age-confirm" class="btn-gold w-full py-4 rounded-xl text-lg tracking-wide mb-4">SOY MAYOR DE 18 AÑOS</button>
+      <a href="https://www.google.com" class="text-white/30 text-sm hover:text-white/50 transition-colors">No soy mayor de edad</a>
+    </div>
+  </div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" aria-label="Clan Cervecero — Inicio">
+        <img src="assets/img/brand/logo.png" alt="Clan Cervecero" class="nav-logo-img">
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Inicio</a>
+        <a href="portafolio.html" class="nav-link text-sm font-medium text-white transition-colors">Portafolio</a>
+        <a href="nosotros.html" class="nav-link text-sm font-medium text-white/80 hover:text-white transition-colors">Nosotros</a>
+        <a href="contacto.html" class="btn-gold text-sm px-5 py-2.5 rounded-full">Contáctanos</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white p-2 -mr-2" aria-label="Abrir menú">
+        <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0e1415] border-t border-white/10">
+      <div class="px-6 py-5 space-y-4">
+        <a href="/" class="block text-white font-medium py-1">Inicio</a>
+        <a href="portafolio.html" class="block text-[#c08f54] font-medium py-1">Portafolio</a>
+        <a href="nosotros.html" class="block text-white font-medium py-1">Nosotros</a>
+        <hr class="border-white/10">
+        <a href="contacto.html" class="block btn-gold text-center py-3 rounded-xl font-semibold">Contáctanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ─── HERO CORTO ─── -->
+    <section class="hero-gradient pt-32 pb-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <span class="text-[#c08f54] text-sm font-semibold tracking-wider uppercase" style="font-family: 'DM Sans', sans-serif;">Catálogo completo</span>
+        <h1 class="text-4xl sm:text-5xl font-bold mt-3 mb-4">Nuestro Portafolio</h1>
+        <p class="text-white/50 text-lg max-w-2xl mx-auto" style="font-family: 'DM Sans', sans-serif;">22+ marcas de 12 países. La selección más diversa de cerveza premium en Guatemala.</p>
+        <div class="divider-gold mx-auto mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ─── FILTER BAR ─── -->
+    <section class="bg-clan-dark sticky top-16 z-30 py-4 border-b border-white/5">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex gap-3 overflow-x-auto pb-2" style="-webkit-overflow-scrolling: touch;">
+          <button class="filter-pill active" data-country="all">Todos</button>
+          <button class="filter-pill" data-country="japon">🇯🇵 Japón</button>
+          <button class="filter-pill" data-country="irlanda">🇮🇪 Irlanda</button>
+          <button class="filter-pill" data-country="inglaterra">🇬🇧 Inglaterra</button>
+          <button class="filter-pill" data-country="usa">🇺🇸 USA</button>
+          <button class="filter-pill" data-country="alemania">🇩🇪 Alemania</button>
+          <button class="filter-pill" data-country="belgica">🇧🇪 Bélgica</button>
+          <button class="filter-pill" data-country="italia">🇮🇹 Italia</button>
+          <button class="filter-pill" data-country="rep-checa">🇨🇿 Rep. Checa</button>
+          <button class="filter-pill" data-country="francia">🇫🇷 Francia</button>
+          <button class="filter-pill" data-country="escocia">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia</button>
+          <button class="filter-pill" data-country="holanda">🇳🇱 Holanda</button>
+          <button class="filter-pill" data-country="dinamarca">🇩🇰 Dinamarca</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BRAND GRID ─── -->
+    <section class="bg-clan-dark py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+          <!-- Sapporo -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="japon">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/sapporo.jpg" alt="Sapporo Premium Beer" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇯🇵</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Japón</span>
+              </div>
+              <h3 class="text-lg font-bold">Sapporo</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Premium Lager</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La cerveza japonesa más icónica. Balance perfecto entre tradición y modernidad desde 1876.</p>
+            </div>
+          </div>
+
+          <!-- Guinness -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="irlanda">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/guinness.webp" alt="Guinness" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇮🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Irlanda</span>
+              </div>
+              <h3 class="text-lg font-bold">Guinness</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Dry Stout</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La stout más famosa del mundo. Espuma cremosa y sabor inconfundible desde 1759.</p>
+            </div>
+          </div>
+
+          <!-- Murphy's -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="irlanda">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/murphys.webp" alt="Murphy's Irish Stout" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇮🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Irlanda</span>
+              </div>
+              <h3 class="text-lg font-bold">Murphy's</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Irish Stout</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Stout irlandesa de Cork, más suave y dulce que su rival dublinesa. Cremosa y accesible.</p>
+            </div>
+          </div>
+
+          <!-- Trooper -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="inglaterra">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/trooper.jpg" alt="Trooper Iron Maiden Beer" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇬🇧</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Inglaterra</span>
+              </div>
+              <h3 class="text-lg font-bold">Trooper</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Premium British Beer</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La cerveza oficial de Iron Maiden. Creada por Bruce Dickinson con Robinsons Brewery.</p>
+            </div>
+          </div>
+
+          <!-- Hobgoblin -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="inglaterra">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/hobgoblin.jpg" alt="Hobgoblin" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇬🇧</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Inglaterra</span>
+              </div>
+              <h3 class="text-lg font-bold">Hobgoblin</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Ruby Beer / Gold / IPA</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Wychwood Brewery. Ruby oscura con carácter. "What's the matter, lagerboy?"</p>
+            </div>
+          </div>
+
+          <!-- St. Peter's -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="inglaterra">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/st-peters.jpg" alt="St. Peter's Brewery" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇬🇧</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Inglaterra</span>
+              </div>
+              <h3 class="text-lg font-bold">St. Peter's</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">English Ales</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Cervecería artesanal de Suffolk en su icónica botella ovalada. Tradición desde el siglo XIII.</p>
+            </div>
+          </div>
+
+          <!-- Blonde Beards -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="inglaterra">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/blonde-beards.webp" alt="Blonde Beards" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇬🇧</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Inglaterra</span>
+              </div>
+              <h3 class="text-lg font-bold">Blonde Beards</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Craft Lager</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Cerveza craft británica con personalidad audaz. Refrescante y con carácter propio.</p>
+            </div>
+          </div>
+
+          <!-- Belhaven -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="escocia">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/belhaven.webp" alt="Belhaven" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Escocia</span>
+              </div>
+              <h3 class="text-lg font-bold">Belhaven</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Scottish Ale</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La cervecería más antigua de Escocia, desde 1719. Best, Black y Wee Heavy son clásicos.</p>
+            </div>
+          </div>
+
+          <!-- Blue Moon -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="usa">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/blue-moon.webp" alt="Blue Moon" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇺🇸</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">USA</span>
+              </div>
+              <h3 class="text-lg font-bold">Blue Moon</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Belgian White</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Wheat beer con cáscara de naranja y cilantro. La craft americana más vendida. Servir con rodaja de naranja.</p>
+            </div>
+          </div>
+
+          <!-- Samuel Adams -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="usa">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/samuel-adams.webp" alt="Samuel Adams" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇺🇸</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">USA</span>
+              </div>
+              <h3 class="text-lg font-bold">Samuel Adams</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Boston Lager / Seasonal</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Pionera del movimiento craft en USA. Boston Lager es un clásico desde 1984.</p>
+            </div>
+          </div>
+
+          <!-- Coors Light -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="usa">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/coors-light.webp" alt="Coors Light" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇺🇸</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">USA</span>
+              </div>
+              <h3 class="text-lg font-bold">Coors Light</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Light Lager</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La Silver Bullet. Light lager refrescante de las Montañas Rocosas de Colorado.</p>
+            </div>
+          </div>
+
+          <!-- Hofbräu -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="alemania">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/hofbrau.webp" alt="Hofbräu München" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇩🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Alemania</span>
+              </div>
+              <h3 class="text-lg font-bold">Hofbräu München</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Bavarian Lager / Weisse</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Cervecería estatal de Baviera desde 1589. Hogar del legendario Hofbräuhaus.</p>
+            </div>
+          </div>
+
+          <!-- Paulaner -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="alemania">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/paulaner.webp" alt="Paulaner" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇩🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Alemania</span>
+              </div>
+              <h3 class="text-lg font-bold">Paulaner</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Weissbier / Münchner</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Munich desde 1634. Su Hefe-Weißbier es referencia mundial en trigo alemán.</p>
+            </div>
+          </div>
+
+          <!-- Schöfferhofer -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="alemania">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/schofferhofer.webp" alt="Schöfferhofer" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇩🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Alemania</span>
+              </div>
+              <h3 class="text-lg font-bold">Schöfferhofer</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Wheat Beer / Grapefruit</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Trigo alemán con toronja natural. Refrescante, ligera y perfecta para clima cálido.</p>
+            </div>
+          </div>
+
+          <!-- Pilsner Urquell -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="rep-checa">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/pilsner-urquell.webp" alt="Pilsner Urquell" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇨🇿</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Rep. Checa</span>
+              </div>
+              <h3 class="text-lg font-bold">Pilsner Urquell</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Original Pilsner</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La primera pilsner del mundo, desde 1842 en Plzeň. El estilo que definió la cerveza moderna.</p>
+            </div>
+          </div>
+
+          <!-- Piraat -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="belgica">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/piraat.webp" alt="Piraat" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇧🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Bélgica</span>
+              </div>
+              <h3 class="text-lg font-bold">Piraat</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Belgian Strong Ale (10.5%)</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">De Van Steenberge. Fuerte, compleja y peligrosamente fácil de beber para su graduación.</p>
+            </div>
+          </div>
+
+          <!-- Gulden Draak -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="belgica">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/gulden-draak.webp" alt="Gulden Draak" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇧🇪</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Bélgica</span>
+              </div>
+              <h3 class="text-lg font-bold">Gulden Draak</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Belgian Dark Triple (10.5%)</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">El Dragón Dorado. Triple oscura premiada mundialmente. Sabores a malta, frutas y especias.</p>
+            </div>
+          </div>
+
+          <!-- Peroni -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="italia">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/peroni.webp" alt="Peroni Nastro Azzurro" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇮🇹</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Italia</span>
+              </div>
+              <h3 class="text-lg font-bold">Peroni Nastro Azzurro</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Italian Lager</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Elegancia italiana desde 1963. Ligera, crujiente y con estilo romano inconfundible.</p>
+            </div>
+          </div>
+
+          <!-- Mastri Birrai -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="italia">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/mastri-birrai.webp" alt="Mastri Birrai Umbri" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇮🇹</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Italia</span>
+              </div>
+              <h3 class="text-lg font-bold">Mastri Birrai Umbri</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Italian Craft</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Cerveza artesanal de Umbría. Tradición italiana con ingredientes locales de calidad.</p>
+            </div>
+          </div>
+
+          <!-- Kronenbourg -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="francia">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/kronenbourg.webp" alt="Kronenbourg 1664" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇫🇷</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Francia</span>
+              </div>
+              <h3 class="text-lg font-bold">Kronenbourg 1664</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">French Lager / Blanc</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">La cerveza número uno de Francia. 1664 Blanc con notas cítricas es un éxito mundial.</p>
+            </div>
+          </div>
+
+          <!-- Grolsch -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="holanda">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/grolsch.webp" alt="Grolsch" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇳🇱</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Holanda</span>
+              </div>
+              <h3 class="text-lg font-bold">Grolsch</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Premium Lager</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Holandesa desde 1615. Famosa por su botella swing-top y su sabor limpio y equilibrado.</p>
+            </div>
+          </div>
+
+          <!-- Carlsberg -->
+          <div class="brand-card card-brand bg-[#1a2425] rounded-2xl overflow-hidden fade-up visible" data-country="dinamarca">
+            <div class="img-zoom-container aspect-square bg-gradient-to-b from-[#1e2a2b] to-[#161f20]">
+              <img src="assets/img/brands/carlsberg.webp" alt="Carlsberg" class="img-zoom w-full h-full object-contain p-6" loading="lazy">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <span>🇩🇰</span>
+                <span class="text-white/40 text-xs uppercase tracking-wider" style="font-family: 'DM Sans', sans-serif;">Dinamarca</span>
+              </div>
+              <h3 class="text-lg font-bold">Carlsberg</h3>
+              <p class="text-white/40 text-xs mt-1" style="font-family: 'DM Sans', sans-serif;">Danish Pilsner</p>
+              <p class="text-white/50 text-sm mt-2 leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Copenhague, 1847. "Probably the best beer in the world." Pilsner danesa de clase mundial.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA BANNER ─── -->
+    <section class="py-16 bg-gradient-to-r from-[#c08f54] to-[#f3d39a]">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center fade-up">
+        <h2 class="text-3xl font-bold text-[#0e1415] mb-4">¿Interesado en distribuir nuestras marcas?</h2>
+        <p class="text-[#0e1415]/70 text-lg mb-8" style="font-family: 'DM Sans', sans-serif;">Contactanos para conocer precios, disponibilidad y condiciones de distribución.</p>
+        <a href="contacto.html" class="inline-block bg-[#0e1415] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#161f20] transition-colors" style="font-family: 'DM Sans', sans-serif;">Solicitar información</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-[#0e1415] pt-16 pb-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <img src="assets/img/brand/logo.png" alt="Clan Cervecero" class="h-10 mb-4 opacity-80">
+          <p class="text-white/40 text-sm leading-relaxed" style="font-family: 'DM Sans', sans-serif;">Importadores de cerveza premium en Guatemala desde 2014.</p>
+        </div>
+        <div>
+          <h4 class="text-white/80 font-semibold text-sm uppercase tracking-wider mb-4" style="font-family: 'DM Sans', sans-serif;">Navegación</h4>
+          <ul class="space-y-3" style="font-family: 'DM Sans', sans-serif;">
+            <li><a href="/" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">Inicio</a></li>
+            <li><a href="portafolio.html" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">Portafolio</a></li>
+            <li><a href="nosotros.html" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">Nosotros</a></li>
+            <li><a href="contacto.html" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white/80 font-semibold text-sm uppercase tracking-wider mb-4" style="font-family: 'DM Sans', sans-serif;">Marcas Populares</h4>
+          <ul class="space-y-3" style="font-family: 'DM Sans', sans-serif;">
+            <li><span class="text-white/40 text-sm">Sapporo</span></li>
+            <li><span class="text-white/40 text-sm">Guinness</span></li>
+            <li><span class="text-white/40 text-sm">Trooper</span></li>
+            <li><span class="text-white/40 text-sm">Blue Moon</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white/80 font-semibold text-sm uppercase tracking-wider mb-4" style="font-family: 'DM Sans', sans-serif;">Contacto</h4>
+          <ul class="space-y-3" style="font-family: 'DM Sans', sans-serif;">
+            <li><a href="mailto:diego@clancervecero.com" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">diego@clancervecero.com</a></li>
+            <li><a href="https://wa.me/50230374433" class="text-white/40 text-sm hover:text-[#c08f54] transition-colors">+502 3037-4433</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-white/20 text-xs" style="font-family: 'DM Sans', sans-serif;">© 2026 Clan Cervecero Guatemala. Todos los derechos reservados.</p>
+        <p class="text-white/20 text-xs" style="font-family: 'DM Sans', sans-serif;">El consumo excesivo de alcohol es dañino para la salud.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/50230374433?text=Hola%2C%20me%20interesa%20distribuir%20sus%20cervezas" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

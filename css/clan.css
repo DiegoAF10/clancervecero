@@ -1,0 +1,312 @@
+/*
+ * Clan Cervecero Design System v1.0
+ * clancervecero.com
+ *
+ * Colors (Brand Kit):
+ *   Dark:       #161f20  (primary background)
+ *   Darker:     #0e1415  (footer, deep sections)
+ *   Gold:       #c08f54  (primary accent, CTAs)
+ *   GoldLight:  #f3d39a  (secondary accent, hover)
+ *   White:      #ffffff  (text on dark)
+ *   Cream:      #f5f0e8  (warm light backgrounds)
+ *
+ * Typography:
+ *   Display: Playfair Display 400-800
+ *   Body:    DM Sans 400-700
+ *
+ * Spacing: 8px base grid
+ */
+
+/* ── Skip Link (a11y) ────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  background: #c08f54;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 0; }
+
+/* ── Base ─────────────────────────────────────────── */
+* { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ── Brand Color Utilities ──────────────────────────── */
+.text-clan-gold       { color: #c08f54; }
+.text-clan-gold-light { color: #f3d39a; }
+.bg-clan-dark         { background-color: #161f20; }
+.bg-clan-darker       { background-color: #0e1415; }
+.bg-clan-cream        { background-color: #f5f0e8; }
+.bg-clan-gold         { background-color: #c08f54; }
+.border-clan-gold     { border-color: #c08f54; }
+
+/* ── Gold CTA Button ────────────────────────────────── */
+.btn-gold {
+  background-color: #c08f54;
+  color: #0e1415;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  background-color: #f3d39a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(192, 143, 84, 0.35);
+}
+.btn-gold:active { transform: translateY(0); }
+
+/* ── Ghost Button ────────────────────────────────────── */
+.btn-ghost {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  border-color: #c08f54;
+  color: #f3d39a;
+  background: rgba(192, 143, 84, 0.08);
+}
+
+/* ── Cards ────────────────────────────────────────────── */
+.card-brand {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(192, 143, 84, 0.1);
+}
+.card-brand:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Scroll Animations ────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Float Animation ──────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* ── Image Zoom ───────────────────────────────────────── */
+.img-zoom-container { overflow: hidden; }
+.img-zoom { transition: transform 0.5s ease; }
+.img-zoom-container:hover .img-zoom { transform: scale(1.08); }
+
+/* ── Hero Animated Gradient ───────────────────────────── */
+@keyframes heroShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.hero-gradient {
+  background: linear-gradient(160deg, #0e1415 0%, #161f20 25%, #1e2a2b 50%, #161f20 75%, #0e1415 100%);
+  background-size: 300% 300%;
+  animation: heroShift 18s ease-in-out infinite;
+}
+
+/* ── Nav scroll state ─────────────────────────────────── */
+.nav-scrolled {
+  background-color: rgba(14, 20, 21, 0.97) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(192, 143, 84, 0.15);
+}
+
+/* ── Nav Logo ─────────────────────────────────────────── */
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  transition: filter 0.3s ease;
+}
+
+/* ── Focus States (WCAG 2.1 AA) ──────────────────────── */
+:focus-visible {
+  outline: 2px solid #c08f54;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── WhatsApp Float ───────────────────────────────────── */
+@keyframes whatsappPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  width: 56px;
+  height: 56px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: whatsappPulse 2.5s infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+
+/* ── Age Gate ─────────────────────────────────────────── */
+.age-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(14, 20, 21, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+.age-gate.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── Stats Counter Animation ──────────────────────────── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.stat-animated { animation: countUp 0.6s ease forwards; }
+
+/* ── Brand Logo Grayscale ─────────────────────────────── */
+.brand-logo-gray {
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.brand-logo-gray:hover {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+}
+
+/* ── Portfolio Filter Pills ───────────────────────────── */
+.filter-pill {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(192, 143, 84, 0.2);
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.filter-pill:hover {
+  border-color: #c08f54;
+  color: #f3d39a;
+}
+.filter-pill.active {
+  background: #c08f54;
+  color: #0e1415;
+  border-color: #c08f54;
+  font-weight: 600;
+}
+
+/* ── Form Inputs ──────────────────────────────────────── */
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(192, 143, 84, 0.2);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #c08f54;
+  box-shadow: 0 0 0 3px rgba(192, 143, 84, 0.15);
+}
+.form-input::placeholder { color: #94a3b8; }
+select.form-input { cursor: pointer; }
+
+/* ── Gold Divider ─────────────────────────────────────── */
+.divider-gold {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c08f54, #f3d39a);
+  border-radius: 2px;
+}
+
+/* ── Selection ────────────────────────────────────────── */
+::selection {
+  background-color: rgba(192, 143, 84, 0.3);
+  color: #f3d39a;
+}
+
+/* ── Scroll bar (dark theme) ──────────────────────────── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0e1415; }
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 143, 84, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(192, 143, 84, 0.5); }
+
+/* ── Brand Logos Horizontal Scroll (mobile) ───────────── */
+.logos-scroll {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+.logos-scroll::-webkit-scrollbar { display: none; }
+.logos-scroll > * { scroll-snap-align: center; flex-shrink: 0; }
+
+/* ── Contact Steps ────────────────────────────────────── */
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c08f54, #f3d39a);
+  color: #0e1415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
