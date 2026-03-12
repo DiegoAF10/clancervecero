@@ -216,6 +216,30 @@ h1, h2, h3, .font-display {
   opacity: 1;
 }
 
+/* ── Filter Scroll Container ─────────────────────────── */
+.filter-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.filter-scroll::-webkit-scrollbar { display: none; }
+
+.filter-scroll-wrapper {
+  position: relative;
+}
+.filter-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 48px;
+  background: linear-gradient(to right, transparent, #161f20);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* ── Portfolio Filter Pills ───────────────────────────── */
 .filter-pill {
   padding: 8px 20px;
