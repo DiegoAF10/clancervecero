@@ -2,26 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://clancervecero.com/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://clancervecero.com/portafolio.html</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://clancervecero.com/nosotros.html</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clancervecero.com/contacto.html</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-03-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://clancervecero.com/portafolio/sapporo.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/guinness.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/trooper.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/hobgoblin.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/st-peters.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/blue-moon.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/samuel-adams.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/lagunitas.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/north-coast.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/kentucky.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/yuengling.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/hofbrau.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/paulaner.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/belhaven.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/grolsch.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/polar.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/pilsner-urquell.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://clancervecero.com/portafolio/snuffle.html</loc>
     <lastmod>2026-03-12</lastmod>
     <priority>0.7</priority>
   </url>
